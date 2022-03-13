@@ -6,15 +6,13 @@ namespace NoodlesForRef
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Give a number between -10 and 10...:");
-            var i = Convert.ToInt32(Console.ReadLine());
-            if (i > -10 && i < 10)
+            var samp = "PHP Tutorial";
+            if (samp.Contains("HP"))
             {
-                Console.WriteLine("i IS within the permited range.");
-            }else
-            {
-                Console.WriteLine("i NOT within the permited range.");
+                var newSamp = samp.Replace("HP", "");
+                Console.WriteLine(newSamp);
             }
+            
         }
     }
 }
