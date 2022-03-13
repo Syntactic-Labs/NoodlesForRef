@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace NoodlesForRef
 {
@@ -6,16 +8,24 @@ namespace NoodlesForRef
     {
         static void Main(string[] args)
         {
-            var str = "PHP";
-            if (str.Substring(0,2)== "PH")
+            var maxNum=0;
+            var minNum=99;
+            int[] num = new int[] { 15, 20, 25 };
+            for (int i = 0; i < num.Length; i++)
             {
-                for (int i = 0; i < 10; i++)
+                if (num[i] > maxNum)
                 {
-
-                Console.WriteLine(str.Substring(0,2));
+                    maxNum = num[i];
+                }
+                if (num[i] < minNum)
+                {
+                    minNum = num[i];
                 }
             }
-            
+                Console.WriteLine($"min number is: {minNum}");
+                Console.WriteLine($"max number is: {maxNum}");
+                Console.WriteLine("The min number is " + num.Min());
+
         }
     }
 }
