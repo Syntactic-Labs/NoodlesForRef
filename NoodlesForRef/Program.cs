@@ -6,11 +6,14 @@ namespace NoodlesForRef
     {
         static void Main(string[] args)
         {
-            var samp = "PHP Tutorial";
-            if (samp.Contains("HP"))
+            var str = "PHP";
+            if (str.Substring(0,2)== "PH")
             {
-                var newSamp = samp.Replace("HP", "");
-                Console.WriteLine(newSamp);
+                for (int i = 0; i < 10; i++)
+                {
+
+                Console.WriteLine(str.Substring(0,2));
+                }
             }
             
         }
